@@ -1,0 +1,25 @@
+Connie Ma
+56047129 // p6z8
+CPSC221 202 L2E
+9 March 2017
+
+PROGRAMMING PROJECT #2
+
+Notes:
+
+  - To run, invoke:
+    $ make clean && make && ./main
+    Uncomment #DEBUG macro at the top for more verbose logging.
+    
+  - Sample output file output.txt does not contain verbose logging.
+  
+  - Helper functions added: print() and bin_print() in max_heap (for 
+    debugging purposes), find_word() in string_bst (for use in conjunction
+    with implementation of word_frequency()).
+
+  - Referenced some of the code from lecture slide set #3 (Priority Queues)
+    to be used in my delete_max & swap_down, insert & swap_up functions,
+    specifically the function deleteMin c/o slide #21 of slide set #3.
+    
+  - Made a small change to util.cpp to include parentheses in the list of tokens
+    used by load_bst because it wasn't parsing Kanye lyrics correctly :(

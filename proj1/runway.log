@@ -1,0 +1,103 @@
+Enter: 
+   Time for a plane to land (in minutes): 3
+   Time for a plane to takeOff (in minutes): 3
+   Landing rate (planes per hour): 15
+   Takeoff rate (planes per hour): 15
+   How long to run the simulation (in minutes): 35
+   Set a VIP value (recommended < 3): 2
+ 
+Time = 1
+Time = 2
+Time = 3
+Plane 696903 wants to land; added to landing queue; 1 in queue
+Landing: Plane 696903
+Time = 4
+Plane 696896 wants to takeoff; added to takeoff queue; 1 in queue; 0 in overflow queue
+Time = 5
+Plane 696905 wants to land; added to landing queue; 2 in queue
+Landing complete; 1 in queue
+Time = 6
+Plane 696906 wants to land; added to landing queue; 2 in queue
+Plane 696894 wants to takeoff; added to takeoff queue; 2 in queue; 0 in overflow queue
+Landing: Plane 696905
+Time = 7
+Plane 696907 wants to land; added to landing queue; 3 in queue
+Plane 696893 wants to takeoff; added to takeoff queue; 3 in queue; 0 in overflow queue
+Plane 696893 is a VIP plane and has been moved to the front!
+Found it! Moving to front.
+
+Time = 8
+Landing complete; 2 in queue
+Time = 9
+Plane 696891 wants to takeoff; added to takeoff queue; 4 in queue; 0 in overflow queue
+Plane 696891 is a VIP plane and has been moved to the front!
+Found it! Moving to front.
+
+Landing: Plane 696906
+Time = 10
+Time = 11
+Landing complete; 1 in queue
+Time = 12
+Landing: Plane 696907
+Time = 13
+Time = 14
+Plane 696914 wants to land; added to landing queue; 2 in queue
+Plane 696886 wants to takeoff but queue is packed; dispatching to overflow; 4 in queue; 1 in overflow queue
+Landing complete; 1 in queue
+Time = 15
+Landing: Plane 696914
+Time = 16
+Time = 17
+Landing complete; 0 in queue
+Time = 18
+Landing: Plane 696891
+Time = 19
+Time = 20
+Takeoff complete; 3 in queue; 1 in overflow queue
+Takeoff traffic subsiding; merging overflow into the takeoff queue
+Time = 21
+Landing: Plane 696893
+Time = 22
+Time = 23
+Takeoff complete; 3 in queue; 0 in overflow queue
+Time = 24
+Plane 696924 wants to land; added to landing queue; 1 in queue
+*** Value is already at front ***
+Plane 696924 is a VIP plane and has been moved to the front!
+Landing: Plane 696924
+Time = 25
+Time = 26
+Plane 696874 wants to takeoff; added to takeoff queue; 4 in queue; 0 in overflow queue
+Plane 696874 is a VIP plane and has been moved to the front!
+Found it! Moving to front.
+
+Landing complete; 0 in queue
+Time = 27
+Landing: Plane 696874
+Time = 28
+Time = 29
+Takeoff complete; 3 in queue; 0 in overflow queue
+Time = 30
+Landing: Plane 696896
+Time = 31
+Plane 696931 wants to land; added to landing queue; 1 in queue
+*** Value is already at front ***
+Plane 696931 is a VIP plane and has been moved to the front!
+Plane 696869 wants to takeoff; added to takeoff queue; 4 in queue; 0 in overflow queue
+Time = 32
+Takeoff complete; 3 in queue; 0 in overflow queue
+Time = 33
+Landing: Plane 696931
+Time = 34
+Plane 696934 wants to land; added to landing queue; 2 in queue
+Time = 35
+Landing complete; 1 in queue
+ 
+STATISTICS
+ 
+Maximum number of planes in landing queue was: 3
+Average minutes spent waiting to land: 1.75
+Maximum number of planes in takeoff queue was: 4
+Average minutes spent waiting to takeoff: 15.2857
+Total number of planes given priority was: 5
+

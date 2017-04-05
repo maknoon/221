@@ -1,0 +1,53 @@
+Connie (Cong) Ma
+56047129 // p6z8
+CPSC221 202 L2E
+
+List of files & descriptions:
+
+Invoke '$ make clean' to refresh the project directory.
+Invoke '$ make all' to compile all programs, or separately as follows:
+
+  Part 1:::
+  The LQueue module contains LQueue.h (header file) for
+  LQueue.C (source file) and LQueue_driver.C (main program lq),
+  which can be compiled and run by invoking:
+    $ make lq && ./lq
+    
+  LQueue_driver will:
+
+   (a) firstly, test the given enqueue() / dequeue() / display()
+       functions with q1 and q2 as before
+
+   (b) secondly, build a new queue q3 from user-prompt and ask
+       the user to input a value to move to the front of the queue.
+       *** after the value is moved to front it will automatically
+       dequeue the first value, and then prompt user to enter
+       a new value to move to the front of the queue ***
+       
+   (c) lastly, build two new queues q4 and q5 based on user input
+       and then merge the two queues together according to specs of
+       merge_two_queues.
+
+
+   Part 2:::
+   The runway module reuses the LQueue.h (header file) for
+   LQueue.C (source file) and runway.C (main program runway),
+   which can be compiled and run by invoking:
+     $ make runway && ./runway
+     
+   Non-trivial bonus features implemented:
+     - a priority queue that lets some planes cut the line, using move_to_front
+       and a user-inputted special "VIP" value
+     - overflow queue for takeoff that uses merge_two_queues to
+       allow some planes better shot at taking off (their wait times are still
+       applied to the statistics at the end)
+     - also some cute automated logging for runway yay
+
+Sample outputs:
+  Logs for runway are generated automatically when you run the program! :)
+  Refer to 'lq.log' for LQueue_driver and 'runway.log' for runway.
+  
+Other notes:
+  Uncomment the DEBUG macro in LQueue.h for more verbose mode.
+  Invoking '$ make clean' will removed all generated files.
+  

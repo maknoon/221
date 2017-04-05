@@ -1,0 +1,130 @@
+Created heap of size 15
+Current number of items in heap is: 0
+Heap is empty, can't access top!
+
+BEGINNING TESTS FOR PART 1A
+*** TESTING INSERT ***
+
+@TEST: generic test
+adding item1,  with number 37 to heap
+adding item2,  with number 66 to heap
+adding item3,  with number 86 to heap
+adding item4,  with number 31 to heap
+adding item5,  with number 17 to heap
+Top of heap is: text_item{"item3",86}
+
+@TEST: insert without any swap_ups needed
+adding nswap5, with number 25 to heap
+adding nswap4, with number 20 to heap
+adding nswap3, with number 15 to heap
+adding nswap2, with number 10 to heap
+adding nswap1, with number 5 to heap
+Top of heap is: text_item{"item3",86}
+
+@TEST: insert with a swap_up / multiple swap_ups
+adding yswap1, with number 0 to heap
+adding yswap2, with number 1000 to heap
+adding yswap3, with number 2 to heap
+adding yswap4, with number 3000 to heap
+adding yswap5, with number 4 to heap
+Top of heap is: text_item{"yswap4",3000}
+
+
+BEGINNING TESTS FOR PART 1B
+*** TESTING DELETEMAX ***
+
+adding item1,  with number 95 to heap
+adding item2,  with number 8 to heap
+adding item3,  with number 78 to heap
+adding item4,  with number 25 to heap
+adding item5,  with number 18 to heap
+Top of heap is: text_item{"item1",95}
+
+@TEST: generic test
+Item returned from heap delete: text_item{"item1",95}
+Top of heap is now: text_item{"item3",78}
+
+@TEST: remove_max works when swap_down with left child
+Item returned from heap delete: text_item{"item3",78}
+Top of heap is now: text_item{"item4",25}
+
+@TEST: remove_max works when swap_down with right child
+Item returned from heap delete: text_item{"item4",25}
+Item returned from heap delete: text_item{"item5",18}
+Top of heap is now: text_item{"item2",8}
+Item returned from heap delete: text_item{"item2",8}
+
+
+BEGINNING TESTS FOR PART 2
+*** TESTING WORDFREQUENCY ***
+
+@TEST generic test (should not exist in file).
+Found: difficult in the input file 0 time(s).
+
+@TEST: The word exists but is not the root.
+Found: harder in the input file 1 time(s).
+Found: better in the input file 1 time(s).
+Found: faster in the input file 1 time(s).
+Found: stronger in the input file 5 time(s).
+
+@TEST: The word to look for is not found in the tree.
+Found: beyonce in the input file 0 time(s).
+
+BEGINNING TESTS FOR PART 3
+*** TESTING OVERALLMOSTFREQ ***
+
+@TEST: generic test of overall_most_freq
+*** Top 5 most frequent words: ***
+text_item{"i",48}
+text_item{"now",21}
+text_item{"you",20}
+text_item{"t",19}
+text_item{"that",15}
+
+*** TESTING ATLEASTLENGTH ***
+
+@TEST: test at_least_length for words that exist
+*** Top 5 most frequent words with at least 8 letters ***
+text_item{"stronger",5}
+text_item{"anything",4}
+text_item{"isotoners",3}
+text_item{"apollonia",3}
+text_item{"tripping",2}
+
+@TEST: test at_least_length for words that exist (<5)
+*** Top 5 most frequent words with at least 10 letters ***
+text_item{"everything",1}
+
+@TEST: test at_least_length for words that do not exist
+*** Top 5 most frequent words with at least 12 letters ***
+No words found matching the criteria!
+
+@TEST: test at_least_length for all words
+*** Top 5 most frequent words with at least 0 letters ***
+text_item{"i",48}
+text_item{"now",21}
+text_item{"you",20}
+text_item{"t",19}
+text_item{"that",15}
+
+*** TESTING STARTSWITH ***
+
+@TEST: test starts_with for words that exist
+*** Top 5 most frequent words that begin with k ***
+text_item{"know",9}
+text_item{"kill",4}
+text_item{"kate",1}
+text_item{"kan",1}
+text_item{"klondike",1}
+
+@TEST: test starts_with for words that exist (<5)
+*** Top 5 most frequent words that begin with y ***
+text_item{"you",20}
+text_item{"ya",10}
+text_item{"yous",1}
+
+@TEST: test starts_with for words that do not exist
+*** Top 5 most frequent words that begin with x ***
+No words found matching the criteria!
+
+

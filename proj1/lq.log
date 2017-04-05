@@ -1,0 +1,67 @@
+Queue created.  Empty? true
+How many elements to add to the queue? 5
+Contents of queue q1 (via  print):
+100  200  300  400  500  
+
+Contents of queue q2 after q2 = q1 (via  print):
+100  200  300  400  500  
+
+Queue q2 empty? false
+Front value in q2: 100
+Remove front -- Queue contents: 200  300  400  500  
+Remove front -- Queue contents: 300  400  500  
+Remove front -- Queue contents: 400  500  
+Remove front -- Queue contents: 500  
+Remove front -- Queue contents: 
+Queue q2 empty? true
+Front value in q2?
+0
+Trying to remove front of q2: 
+*** Queue is empty -- can't remove a value ***
+How many elements to add to the new queue? 4
+Contents of queue q3 (via  print):
+10  20  30  40  
+
+Element to move to front of queue? 10
+*** Value is already at front ***
+New queue after move_to_front: 10  20  30  40  
+New queue after dequeue: 20  30  40  
+Element to move to front of queue? 30
+Found it! Moving to front.
+
+New queue after move_to_front: 30  20  40  
+New queue after dequeue: 20  40  
+Element to move to front of queue? 5
+*** Value not in Queue ***
+
+New queue after move_to_front: 20  40  
+New queue after dequeue: 40  
+Element to move to front of queue? 40
+*** Value is already at front ***
+New queue after move_to_front: 40  
+New queue after dequeue: 
+Queue q3 empty? true
+Front value in q3?
+0
+Trying to remove front of q3: 
+*** Queue is empty -- can't remove a value ***
+How many elements to add to the new queues? 6
+Contents of queue q4, q5 before merge (via print):
+2  4  6  8  10  12  
+3  6  9  12  15  18  
+
+Contents of queue q4, q5 after merge (via print):
+2  3  4  6  6  8  9  10  12  12  15  18  
+
+
+Queue q4 empty? true
+Front value in q4?
+0
+Trying to remove front of q4: 
+*** Queue is empty -- can't remove a value ***
+Queue q5 empty? true
+Front value in q5?
+0
+Trying to remove front of q5: 
+*** Queue is empty -- can't remove a value ***
+

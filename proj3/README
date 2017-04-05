@@ -1,0 +1,25 @@
+Connie Ma
+56047129 // p6z8
+CPSC221 202 L2E
+30 March 2017
+
+PROGRAMMING PROJECT #3
+
+Invoke $ make clean && make all or $ make g[#] for each generator.
+Code for generator6 was copied from the supplied project document.
+
+Notes:
+  generators:
+	- generator0 just inserts incremental integers (n)
+	- generator1 inserts & immediately finds integers (n/2)
+	- generator2 inserts incremental n/2 & removes decremental n/2
+	- generator3 inserts incremental n/2 & finds decremental n/2
+	- generator4 inserts n/4, then finds in 3 different fashions
+	- generator5 inserts decremental integers (n)
+	- generator6 inserts & immediately removes integers (n)
+	- generator7 inserts halves of n in different orders
+	- generator10 is for testing stuff; won't affect leaderboard
+
+  etc:
+	- probably spent around 12 hours on this project in total
+	- output.sh is a bash script for outputting points to gnuplot
